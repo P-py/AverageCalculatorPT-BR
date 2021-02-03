@@ -21,6 +21,7 @@ def MédiaGeométrica():
         z = float(entryz.get())
         média = ((x*y*z)**(1/3))
         média_label = Label(CalculadorDeMédiasRoot, fg='Red', text=f'O valor da média geométrica é {média}')
+        média_label.pack()
     
     botãoCalcular = Button(CalculadorDeMédiasRoot, text='Calcular média geométrica', command=MédiaGeométricaCalcular)
     botãoCalcular.pack()
