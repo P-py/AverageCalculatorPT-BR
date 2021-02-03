@@ -1,6 +1,4 @@
 from tkinter import *
-import time
-from math import sqrt as raizquad
 
 CalculadorDeMédiasRoot = Tk()
 
@@ -22,6 +20,7 @@ def MédiaGeométrica():
         y = float(entryy.get())
         z = float(entryz.get())
         média = ((x*y*z)**(1/3))
+        média_label = Label(CalculadorDeMédiasRoot, fg='Red', text=f'O valor da média geométrica é {média}')
     
     botãoCalcular = Button(CalculadorDeMédiasRoot, text='Calcular média geométrica', command=MédiaGeométricaCalcular)
     botãoCalcular.pack()
